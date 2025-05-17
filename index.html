@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hello Vercel</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0f0f0;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to My Vercel Project!</h1>
-    <h2>This is a demo project created to demonstrate how to deploy a website using Vercel.</h2>
-    <h3>-By Khushi Kshatriya</h3>
- </body>
-  
+    <h1>Rock Paper Scissors</h1>
+    <div class="choices">
+        <div class="choice" id="scissors">
+            <img src="scissors.png">
+        </div>
+        <div class="choice" id="rock">
+            <img src="rock.png">
+        </div>
+        
+        <div class="choice" id="paper">
+            <img src="paper.png">
+        </div>
+    </div>
+    <div class="score-board" >
+        <div class="score" >
+               <p id="user-score">0</p>
+               <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+    <div class="msg-container">
+        <p id="msg">Play Your Move</p>
+    </div>
+    <script src="app.js"></script>
+</body>
 </html>
